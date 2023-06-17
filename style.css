@@ -1,0 +1,30 @@
+section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-event {
+    position: relative;
+    display: flex;
+  }
+  
+  .timeline-event::before {
+    content: attr(data-year);
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 30px;
+    padding: 5px;
+    background-color: #f2f2f2;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  
+  .timeline-event > * {
+    margin-left: 20px;
+  }
+  
+  .timeline-box {
+    width: 200px; /* Set the desired width for the boxes */
+  }
